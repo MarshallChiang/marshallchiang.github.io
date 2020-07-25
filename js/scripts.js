@@ -45,19 +45,45 @@
   $(window).scroll(navbarCollapse);
 
   // Magnific popup calls
-  $('#portfolio').magnificPopup({
+  $('.magnific-popup').magnificPopup({
     delegate: 'a',
     type: 'image',
-    tLoading: 'Loading image #%curr%...',
-    mainClass: 'mfp-img-mobile',
-    gallery: {
-      enabled: true,
-      navigateByImgClick: true,
-      preload: [0, 1]
-    },
-    image: {
-      tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
-    }
+    // tLoading: 'Loading image #%curr%...',
+    // mainClass: 'mfp-img-mobile',
+    // gallery: {
+    //   enabled: true,
+    //   navigateByImgClick: true,
+    //   preload: [0, 1]
+    // },
+    // image: {
+    //   tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
+    // }
   });
-
 })(jQuery); // End of use strict
+
+function renderModalContext(e){
+  $('#ModalLabel').text(e)
+  // var project = $.getJSON('')[e]['paragraph']
+  var project = projects[e]['paragraph'];
+  $('#scroll-side-list').empty();
+  $('#scroll-body').empty();
+  var index = 1;
+  for (const [k, v] of  Object.entries(project)) {
+    $('<a class="list-group-item list-group-item-action border-0" href="#list-item-'+ index +'">' + k + '</a>').appendTo('#scroll-side-list');
+    $('<h5 id="list-item-'+ index + '">' + k + '</h5>').appendTo('#scroll-body');
+    $('<p class="magnific-popup">'+ v + '</p>').appendTo('#scroll-body');
+    index += 1
+  }
+}
+
+projects = {
+  "GroupSchedule" : {
+      "repo_url" : "",
+      "paragraph" : {
+        "Design Context" : "    ........................................................................................................    ....... therefore fdf sdf ffff sdf sdf saaaaa  fdsadf asdf .",
+        "Pain Point" : "..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>",
+        "Flow/UI" : "..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>",
+        "Result" : "..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>"
+    }
+  }
+}

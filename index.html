@@ -9,7 +9,7 @@
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="assets/img/favicon.png" />
         <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
+        <script src="https://use.fontawesome.com/releases/v5.14.0/js/all.js" crossorigin="anonymous"></script>
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
@@ -22,9 +22,9 @@
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
             <div class="container">
-                <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                    <img style="width:5%;height:5%" src="./assets/img/main_logo.png">
-                </a>
+                <!-- <a class="navbar-brand js-scroll-trigger" href="#page-top"> -->
+                    <img class="navbar-brand js-scroll-trigger" style="min-width:36px; min-height:36px; width:5%; height:5%" src="./assets/img/main_logo.png">
+                <!-- </a> -->
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ml-auto my-2 my-lg-0">
@@ -88,14 +88,14 @@
                         <div class="mt-5">
                             <i class="fas fa-4x fa-database text-primary mb-4"></i>
                             <h3 class="h4 mb-2">Database</h3>
-                            <p class="text-muted mb-0">Manipulate data by MySQL query.</p>
+                            <p class="text-muted mb-0">Manipulate data with MySQL statements.</p>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6 text-center">
                         <div class="mt-5">
-                            <i class="fas fa-4x fa-users text-primary mb-4"></i>
+                            <i class="fas fa-4x fa-people-arrows text-primary mb-4"></i>
                             <h3 class="h4 mb-2">Communication</h3>
-                            <p class="text-muted mb-0">Converge opinions from teams for solutions.</p>
+                            <p class="text-muted mb-0">Converge opinions from teams into solutions.</p>
                         </div>
                     </div>
                 </div>
@@ -106,50 +106,84 @@
         <div id="portfolio">
             <div class="container-fluid p-0">
                 <div class="row no-gutters">
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/1.jpg">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/1.jpg" alt="" />
+                    <div class="col-lg-4 col-sm-6" onclick="renderModalContext('GroupSchedule')" data-toggle="modal" data-target="#project-detail">
+                        <div class="portfolio-box" href="assets/img/portfolio/fullsize/1.png">
+                            <img class="img-fluid" src="assets/img/portfolio/fullsize/1.png" style="width:100%;height:100%" alt="" />
                             <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">Category</div>
-                                <div class="project-name">Project Name</div>
+                                <div class="project-category text-white-50 noselect"><u>Internal Tool</u></div>
+                                <div class="project-name noselect">GroupSchedule</div>
+                                <p>
+                                    <span class="badge badge-warning">Python</span>
+                                    <span class="badge badge-warning">MySQL</span>
+                                    <span class="badge badge-warning">Lambda</span>
+                                    <span class="badge badge-warning">API Gateway</span>
+                                    <span class="badge badge-warning">CloudWatch</span>
+                                    <span class="badge badge-warning">GoogleAppScript</span>
+                                </p>
                             </div>
-                        </a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6" data-toggle="modal" data-target="#project-detail">
+                        <div class="portfolio-box" value="ProxyGate" href="assets/img/portfolio/fullsize/2.png">
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/2.png" alt="" />
+                            <div class="portfolio-box-caption">
+                                <div class="project-category text-white-50 noselect"><u>Internal Tool</u></div>
+                                <div class="project-name noselect">ProxyGate</div>
+                                <p>
+                                    <span class="badge badge-warning">Python</span>
+                                    <span class="badge badge-warning">S3</span>
+                                    <span class="badge badge-warning">Lambda</span>
+                                    <span class="badge badge-warning">API Gateway</span>
+                                </p>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/2.jpg">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/2.jpg" alt="" />
+                        <div class="portfolio-box" name="Dashboard" href="assets/img/portfolio/fullsize/3.png">
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/3.png" alt="" />
                             <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">Category</div>
-                                <div class="project-name">Project Name</div>
+                                <div class="project-category text-white-50"><u>Internal Tool</u></div>
+                                <div class="project-name">Dashboard</div>
+                                <p>
+                                    <span class="badge badge-warning">Python</span>
+                                    <span class="badge badge-warning">JavaScript</span>
+                                    <span class="badge badge-warning">HTML</span>
+                                    <span class="badge badge-warning">CSS</span>
+                                    <span class="badge badge-warning">S3</span>
+                                    <span class="badge badge-warning">Lambda</span>
+                                    <span class="badge badge-warning">API Gateway</span>
+                                </p>
                             </div>
-                        </a>
+                        </div>
                     </div>
                     <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/3.jpg">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/3.jpg" alt="" />
+                        <div class="portfolio-box" href="assets/img/portfolio/fullsize/4.png">
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/4.png" alt="" />
                             <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">Category</div>
-                                <div class="project-name">Project Name</div>
+                                <div class="project-category text-white-50"><u>For Fun</u></div>
+                                <div class="project-name">LINE Chatbot</div>
+                                <p>
+                                    <span class="badge badge-warning">Python</span>
+                                    <span class="badge badge-warning">LINE Message API</span>
+                                    <span class="badge badge-warning">S3</span>
+                                    <span class="badge badge-warning">Lambda</span>
+                                    <span class="badge badge-warning">API Gateway</span>
+                                </p>
                             </div>
-                        </a>
+                        </div>
                     </div>
                     <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/4.jpg">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/4.jpg" alt="" />
+                        <div class="portfolio-box" href="assets/img/portfolio/fullsize/5.png">
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/5.png" alt="" />
                             <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">Category</div>
-                                <div class="project-name">Project Name</div>
+                                <div class="project-category text-white-50"><u>Internal Tool</u></div>
+                                <div class="project-name">Internal Server Host</div>
+                                <p>
+                                    <span class="badge badge-warning">Python</span>
+                                    <span class="badge badge-warning">EC2</span>
+                                </p>
                             </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-4 col-sm-6">
-                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/5.jpg">
-                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/5.jpg" alt="" />
-                            <div class="portfolio-box-caption">
-                                <div class="project-category text-white-50">Category</div>
-                                <div class="project-name">Project Name</div>
-                            </div>
-                        </a>
+                        </div>
                     </div>
                     <div class="col-lg-4 col-sm-6">
                         <a class="portfolio-box" href="assets/img/portfolio/fullsize/6.jpg">
@@ -161,13 +195,34 @@
                         </a>
                     </div>
                 </div>
+                <div class="modal fade" id="project-detail" tabindex="-1" role="dialog" style="z-index:1041" aria-labelledby=ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-xl" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h3 class="modal-title" id="ModalLabel">Modal title</h3>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div id="scroll-side-list" class="list-group col-lg-3 d-none d-lg-block">
+                                    <i class="fab fa-3x fa-github-square text-primary mb-0"></i> 
+                                </div>
+                                <div id="scroll-body" data-spy="scroll" data-target="#scroll-side-list" data-offset="0" class="scrollspy-example col-lg-9" style=" word-break:keep-all; max-height:500px;overflow-y: auto;position: relative;">
+                                    
+                                </div>      
+                            </div>
+                        </div>
+                    </div>
+                  </div>
             </div>
         </div>
         <!-- Call to action-->
-        <section class="page-section bg-dark text-white">
+        <section class="page-section bg-dark text-white" id="resume">
             <div class="container text-center">
-                <h2 class="mb-4">Free Download at Start Bootstrap!</h2>
-                <a class="btn btn-light btn-xl" href="https://startbootstrap.com/themes/creative/">Download Now!</a>
+                <h2 class="mb-4">Come visit my Linkedin!</h2>
+                <i class="fab fa-4x fa-linkedin text-primary mb-4"></i>
             </div>
         </section>
         <!-- Contact-->
