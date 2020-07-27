@@ -9,6 +9,13 @@
       "Design Context" : "Since the e-commerce industry in Taiwan is quite advanced, many companies are building their own portal to work with partners, hence there's no standard to consolidate API requests from different spec. As a partner, we need a scalable and quick solution to handle this case.",
       "Pain Point" : "<ul><li>Current endpoint only support GET request with parameters, if the integration requirement is POST with JSON string body, we need to build a special logic or nothing we can do for it.</li><li>It's time consuming to build customized function, which might have negative impact on business side.</li></ul>",
       "Flow/UI" : "<a class='fab fa-github mr-3'></a><a href='https://github.com/MarshallChiang/ProxyGate' target='_blank'><u>API document of this repository</u></a></img><h6 class='m-3'>Flow</h6><img class='img-responsive' style='width:100%' src='https://marshallfiles.s3-ap-northeast-1.amazonaws.com/github-static/component_image_1_proxygate.png'><img>",
-      "Result" : "<ul><li>Reduce time spending on setting on time manually by processing over 10k tasks in queue automatically.</li><li>Improve customer experience by giving precise data of each marketing campaign. </li><li>Partner start to conduct complicated campaign with ShopBack without concern of manpower and human-error.</li></ul>"
+      "Result" : "<ul><li>Merchants integrated via this method have already created 19M GMV and 400K commission in accumulation.</li><li>The solution also onboard merchant with App integration which provide better user experience.</li><li>Reduce the difficulty of integration that caused by system compatibility.</li></ul>"
+    },
+    "Dashboard" : {
+        "Design Context" : "In affiliate industry, we have stored a lot of data from diverse portal, However we could barely get the insight since it never get sorted. To provide more intuitive information, we need a simple dashboard for people who doesn't have the ability to manupulate data by using command-line.",
+        "Pain Point" : "<ul><li>People in commercial team might not be able to deal with raw data.</li><li>People who has the access and want to do the comparison still need to pull multiple times by different filter to aggregate the data.</li></ul>",
+        "Flow/UI" : "<a class='fab fa-github mr-3'></a><a href='https://github.com/MarshallChiang/ProxyGate' target='_blank'><u>API document of this repository</u></a></img><h6 class='m-3'>Flow</h6><img class='img-responsive' style='width:100%' src='https://marshallfiles.s3-ap-northeast-1.amazonaws.com/github-static/component_image_1_proxygate.png'><img>",
+        "Result" : "<ul><li>Reduce ti me spending on setting on time manually by processing over 10k tasks in queue automatically.</li><li>Improve customer experience by giving precise data of each marketing campaign. </li><li>Partner start to conduct complicated campaign with ShopBack without concern of manpower and human-error.</li></ul>"
     }
+
 }
