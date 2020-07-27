@@ -58,8 +58,8 @@
     //   tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
     // }
   });
-  console.log(navigator.maxTouchPoints)
-  if (navigator.maxTouchPoints == 1) {
+  // Detect device
+  if (navigator.maxTouchPoints > 1) { 
     $('.portfolio-box-caption').css('opacity', 1)
     $('.portfolio-box-caption').css('background-color', 'rgba(244, 98, 58, 0.7)')
   }
