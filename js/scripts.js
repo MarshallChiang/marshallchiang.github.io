@@ -43,7 +43,6 @@
   navbarCollapse();
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
-
   // Magnific popup calls
   $('.magnific-popup').magnificPopup({
     delegate: 'a',
@@ -59,6 +58,11 @@
     //   tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
     // }
   });
+  console.log(navigator.maxTouchPoints)
+  if (navigator.maxTouchPoints == 1) {
+    $('.portfolio-box-caption').css('opacity', 1)
+    $('.portfolio-box-caption').css('background-color', 'rgba(244, 98, 58, 0.7)')
+  }
 })(jQuery); // End of use strict
 
 function renderModalContext(e){
@@ -80,8 +84,8 @@ projects = {
   "GroupSchedule" : {
       "repo_url" : "",
       "paragraph" : {
-        "Design Context" : "    ........................................................................................................    ....... therefore fdf sdf ffff sdf sdf saaaaa  fdsadf asdf .",
-        "Pain Point" : "..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>",
+        "Design Context" : "With the growth of business, the amount of manual setting in the system for marketing campaign has been significantly increased and became even more complicated. Therefore, high possibility of error might be made in the moment since the system yet to support schedule and automation.",
+        "Pain Point" : "- Since the campaign usually start at 00:00 and couldn't be scheduled, staff needs to stay up late to configure and implement the setting <br/> - Even the first pain point has been completed, still need to revise the setting back when the campaign is over. </br> - It's quite common for merchant to stack multiple campaigns, so it's really difficult to remember the context of each of them and activate on time.",
         "Flow/UI" : "..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>",
         "Result" : "..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>..........<br/>"
     }
