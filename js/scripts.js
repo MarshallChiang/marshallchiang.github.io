@@ -80,4 +80,4 @@ function renderModalContext(e){
   }
 }
 
-var paragraph = jQuery.getJSON('https://marshallfiles.s3-ap-northeast-1.amazonaws.com/github-static/paragraph.json')
+var paragraph = jQuery.getJSON('https://static-github.s3-ap-northeast-1.amazonaws.com/paragraph.json')
