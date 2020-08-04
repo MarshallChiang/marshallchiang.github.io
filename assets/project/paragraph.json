@@ -14,14 +14,14 @@
     "Dashboard" : {
         "Design Context" : "In affiliate industry, we have stored a lot of data from diverse portal, However we could barely get the insight since it never get sorted. To provide more intuitive information, we need a simple dashboard for people who doesn't have the ability to manupulate data by using command-line.",
         "Pain Point" : "<ul><li>People in commercial team might not be able to deal with raw data.</li><li>People who has the access and want to do the comparison still need to pull multiple times by different filter to aggregate the data.</li></ul>",
-        "Flow/UI" : "<a class='fab fa-github mr-3'></a><a href='https://github.com/MarshallChiang/ProxyGate' target='_blank'><u>API document of this repository</u></a><<h6 class='m-3'>Flow</h6><img class='img-responsive rounded' style='width:100%' src='./assets/img/portfolio/fullsize/Dashboard_image_1.png'></img><h6 class='m-3'>UI</h6><img class='img-responsive rounded' style='width:100%' src='./assets/img/portfolio/fullsize/Dashboard_image_2.png'></img><img class='img-responsive rounded' style='width:100%' src='./assets/img/portfolio/fullsize/Dashboard_image_3.png'></img>",
+        "Flow/UI" : "<a class='fab fa-github mr-3'></a><a href='https://github.com/MarshallChiang/ProxyGate' target='_blank'><u>API document of this repository</u></a><h6 class='m-3'>Flow</h6><img class='img-responsive rounded' style='width:100%' src='./assets/img/portfolio/fullsize/Dashboard_image_1.png'></img><h6 class='m-3'>UI</h6><img class='img-responsive rounded' style='width:100%' src='./assets/img/portfolio/fullsize/Dashboard_image_2.png'></img><img class='img-responsive rounded' style='width:100%' src='./assets/img/portfolio/fullsize/Dashboard_image_3.png'></img>",
         "Result" : "<ul><li>Increse revenue and margin by gaining the insight from this dashboard output.</li><li>Save 50% time on pulling data and its aggregation.</li></ul>"
     },
     "Chatbot" : {
         "Design Context" : "Since it's quite frustrated that the face you see is quite familiar but you just can't spell the name out.",
         "Pain Point" : "<ul><li>Can't sleep when you couldn't find out who he/she is.</li></ul>",
-        "Flow/UI" : "<a class='fab fa-github mr-3'></a><a href='https://github.com/MarshallChiang/LINE-Chatbot' target='_blank'><u>API document of this repository</u></a><<h6 class='m-3'>How it works</h6><img class='img-responsive rounded' style='width:100%' src='./assets/img/portfolio/fullsize/Chatbot_image_2.gif'></img><h6 class='m-3'>Flow</h6><img class='img-responsive rounded' style='width:100%' src='./assets/img/portfolio/fullsize/Chatbot_image_1.png'></img>",
-        "Result" : "<ul><li>Now I.</li></ul>"
+        "Flow/UI" : "<a class='fab fa-github mr-3'></a><a href='https://github.com/MarshallChiang/LINE-Chatbot' target='_blank'><u>API document of this repository</u></a><<h6 class='m-3'>How it works</h6><img class='img-responsive rounded' style='width:60%' src='./assets/img/portfolio/fullsize/Chatbot_image_2.gif'></img><h6 class='m-3'>Flow</h6><img class='img-responsive rounded' style='width:100%' src='./assets/img/portfolio/fullsize/Chatbot_image_1.png'></img>",
+        "Result" : "<ul><li>Now I never choke again when I see these people on television</li></ul>"
     }   
     
 }
