@@ -9,7 +9,7 @@
       "Design Context" : "Since the e-commerce industry in Taiwan is quite advanced, many companies are building their own portal to work with partners, hence there's no standard to consolidate API requests from different spec. As a partner, we need a scalable and quick solution to handle this case.",
       "Pain Point" : "<ul><li>Current endpoint only support GET request with parameters, if the integration requirement is POST with JSON string body, we need to build a special logic or nothing we can do for it.</li><li>It's time consuming to build customized function, which might have negative impact on business side.</li></ul>",
       "Flow/UI" : "<a class='fab fa-github mr-3'></a><a href='https://github.com/MarshallChiang/ProxyGate' target='_blank'><u>API document of this repository</u></a><h6 class='m-3'>Flow</h6><img class='img-responsive rounded' style='width:100%' src='./assets/img/portfolio/fullsize/ProxyGate_image_1.png'></img>",
-      "Result" : "<ul><li>Merchants integrated via this method have already created 19M GMV and 400K commission in accumulation.</li><li>The solution also onboard merchant with App integration which provide better user experience.</li><li>Reduce the difficulty of integration that caused by system compatibility.</li></ul>"
+      "Result" : "<ul><li>50% of GMV in 2020 was created by merchants integrated via this method.</li><li>The solution also onboard merchant with App integration which provide better user experience.</li><li>Reduce the difficulty of integration that caused by system compatibility.</li></ul>"
     },
     "Dashboard" : {
         "Design Context" : "In affiliate industry, we have stored a lot of data from diverse portal, However we could barely get the insight since it never get sorted. To provide more intuitive information, we need a simple dashboard for people who doesn't have the ability to manupulate data by using command-line.",
@@ -25,8 +25,14 @@
     },
     "Server-Host" : {
         "Design Context" : "Consolidate all the services on the website and hosted on EC2 to let everyone access and use remotely.",
-        "Flow/UI" : "<h6 class='m-3'>Structure</h6><img class='img-responsive rounded' style='width:100%' src='./assets/img/portfolio/fullsize/ServerHost_image_1.png'></img>",
+        "Flow/UI" : "<h6 class='m-3'>Overview</h6><img class='img-responsive rounded' style='width:100%' src='./assets/img/portfolio/fullsize/ServerHost_image_1.png'></img>",
         "Result" : "<ul><li>Able to trace all the actions made by team member</li><li>Since it's no longer hosted on localhost, everyone could access outside the office especially during the pandemic of COVID-19</li></ul>"
+    },
+    "Link-Generator" : {
+        "Design Context" : "Tracking link is the most important matter in cashback site and has been frequently generated to direct user to different landing page with parameter. Since the parameter spec of each merchant is way different, a portal to maintain the accuracy and efficiency is needed.",
+        "Pain Point" : "<ul><li>Impossible to remember every merchant parameter spec under different circumstances.</li><li>Too slow to create deeplink one by one.</li></ul>",
+        "Flow/UI" : "<h6 class='m-3'>Overview</h6><img class='img-responsive rounded' style='width:100%' src='./assets/img/portfolio/fullsize/Link-Generator_image_1.png'></img>",
+        "Result" : "<ul><li>Error caused by incorrect tracking link has been decreased by 30%.</li><li>Increase the efficiency by 200% of generating deep link for any purposes.</li></ul>"
     }
 
     
