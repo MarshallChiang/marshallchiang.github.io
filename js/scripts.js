@@ -62,6 +62,7 @@
   if (navigator.maxTouchPoints > 1) { 
     $('.portfolio-box-caption').css('opacity', 1)
     $('.portfolio-box-caption').css('background-color', 'rgba(244, 98, 58, 0.7)')
+    $('')
   }
 })(jQuery); // End of use strict
 
@@ -79,14 +80,8 @@ function renderModalContext(e){
     index += 1
   }
 }
-const heightOutput = document.querySelector('#height');
-const widthOutput = document.querySelector('#width');
-
-function reportWindowSize() {
-  heightOutput.textContent = window.innerHeight;
-  widthOutput.textContent = window.innerWidth;
-}
-
-window.onresize = reportWindowSize;
+$(".modal-body").on("swipe",function(){
+  $(".close").click()
+});
 
 var paragraph = jQuery.getJSON('https://static-github.s3-ap-northeast-1.amazonaws.com/paragraph.json')
