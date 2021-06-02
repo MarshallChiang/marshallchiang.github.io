@@ -80,8 +80,12 @@ function renderModalContext(e){
     index += 1
   }
 }
-$(".modal-body").on("swipe",function(){
-  $(".close").click()
+$(function(){
+  // Bind the swipeHandler callback function to the swipe event on modal
+  $('.modal-dialog').on('swiperight', swipeHandler );
+  function swipeHandler( event ){
+    $('.close').click()
+  }
 });
 
 var paragraph = jQuery.getJSON('https://static-github.s3-ap-northeast-1.amazonaws.com/paragraph.json')
