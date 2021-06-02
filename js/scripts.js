@@ -79,5 +79,14 @@ function renderModalContext(e){
     index += 1
   }
 }
+const heightOutput = document.querySelector('#height');
+const widthOutput = document.querySelector('#width');
+
+function reportWindowSize() {
+  heightOutput.textContent = window.innerHeight;
+  widthOutput.textContent = window.innerWidth;
+}
+
+window.onresize = reportWindowSize;
 
 var paragraph = jQuery.getJSON('https://static-github.s3-ap-northeast-1.amazonaws.com/paragraph.json')
