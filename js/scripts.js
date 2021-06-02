@@ -87,5 +87,6 @@ $(function(){
     $('.close').click()
   }
 });
+$.mobile.autoInitializePage = false;
 
 var paragraph = jQuery.getJSON('https://static-github.s3-ap-northeast-1.amazonaws.com/paragraph.json')
