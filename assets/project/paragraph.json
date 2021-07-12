@@ -30,8 +30,8 @@
         "Result" : "<ul><li>Now I never choke again when I see these people on television</li></ul>"
     },
     "Server-Host" : {
-        "Design Context" : "Consolidate all the services on the website and hosted on EC2 to let everyone access and use remotely.",
-        "Flow/UI" : "<h6 class='m-3'>Overview</h6><img class='img-responsive rounded' style='width:100%' src='./assets/img/portfolio/fullsize/ServerHost_image_1.png'></img>",
-        "Result" : "<ul><li>Able to trace all the actions made by team member</li><li>Since it's no longer hosted on localhost, everyone could access outside the office especially during the pandemic of COVID-19</li></ul>"
+        "Design Context" : "Using Nodejs to host a website with games for fun.",
+        "Flow/UI" : "<a class='fab fa-github mr-3'></a><a href='https://github.com/MarshallChiang/Birthday_Project' target='_blank'><u>API document of this repository</u></a>How it works</h6><img class='img-responsive rounded mx-auto d-block' style='width:60%' src='./assets/img/portfolio/fullsize/Birthday_Project_image_1.gif'></img>",
+        "Result" : "<a href='https://marshall-chiang.medium.com/oh-dev-journal-web-application-games-c01ab9fee050' target='_blank'><u>Medium Story</u></a>"
     }
 }
